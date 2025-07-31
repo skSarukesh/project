@@ -1,42 +1,29 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Expense Tracker Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sarukesh | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <div class="container">
-    <h1>Expense Tracker Dashboard</h1>
-    
-    <form id="expense-form">
-      <div class="form-group">
-        <label for="title">Expense Title</label>
-        <input type="text" id="title" name="title" placeholder="e.g., Grocery" required />
-      </div>
-      
-      <div class="form-group">
-        <label for="amount">Amount</label>
-        <input type="number" id="amount" name="amount" placeholder="e.g., 50" min="0.01" step="0.01" required />
-      </div>
-      
-      <div class="form-group">
-        <label for="date">Date</label>
-        <input type="date" id="date" name="date" required />
-      </div>
-      
-      <button type="submit" id="add-expense-btn">Add Expense</button>
-    </form>
-    
-    <div id="expenses-list"></div>
-    
-    <div id="total-expense">
-      Total Expense: <span id="total-amount">0.00</span>
-    </div>
+<body onload="initPage('about')">
+  <div class="container fade-in">
+    <aside class="sidebar">
+      <h2>Sarukesh</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html" id="link-about">About</a></li>
+          <li><a href="projects.html" id="link-projects">Projects</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main class="content">
+      <section>
+        <h1>About Me</h1>
+        <p>Hello! I'm Sarukesh, an aspiring developer passionate about full-stack development, cloud computing, and AI. I enjoy working with databases, building efficient systems, and developing machine learning applications.</p>
+      </section>
+    </main>
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>
